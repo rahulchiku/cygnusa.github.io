@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cygnus A</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="ds.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+<!--
+
+TemplateMo 552 Video Catalog
+
+https://templatemo.com/tm-552-video-catalog
+
+-->
+</head>
+
+<body>
+                        <div class="col-5 col-md-8 ml-auto mr-0">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                        data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase">
+                                            <li class="nav-item active">
+                                                <a class="nav-link tm-nav-link" href="index.html">Space<span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="about.html">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="contact.html">Contact Us</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="game.html">Game Zone</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+  </head>
+  <style>
+    body {
+      width: 100%;
+      overflow: hidden;
+      background: url("space.jpg");
+      background-size: cover;
+    }
+    #board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid white;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    #jet {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url("rocket.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+    }
+
+    .bullets {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 20px;
+      height: 20px;
+      background: url("bullet.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .rocks {
+      position: absolute;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      background: url("alien.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #points {
+      position: absolute;
+      top: 0px;
+      margin: 40px;
+      opacity: 0.7;
+      font-size: 10em;
+      color: white;
+    }
+  </style>
+  <script src="app.js" defer></script>
+  <body>
+    <div id="board">
+      <div class="rocks"></div>
+      <div id="jet"></div>
+    </div>
+    <div id="points">0</div>
+  </body>
+</html>
